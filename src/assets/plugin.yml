@@ -1,8 +1,8 @@
-identifier: ch.kaifa.listenbrainz
-name: ListenBrainz
+identifier: ch.lqvp.listenbrainz
+name: ListenBrainz-Csutom
 description: Plugin to submit listening data to ListenBrainz
-author: mar0xy
-repo: https://github.com/KAIFA-CH/cider-listenbrainz
+author: lqvp
+repo: https://github.com/lqvpcider-listenbrainz
 entry:
   "plugin.js":
     type: main

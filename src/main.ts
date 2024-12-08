@@ -56,7 +56,7 @@ export default {
             const currentItem = musickit.nowPlayingItem;
 
             if (Object.keys(currentOldData).length === 0) return;
-  
+
             if (!currentItem && musickit.queue._nextPlayableItemIndex === -1) {
                 const scrobble_data = {
                     listen_type: "single",
@@ -65,10 +65,11 @@ export default {
                         listened_at: currentOldData.listenedAt,
                         track_metadata: {
                             additional_info: {
-                                media_player: "Cider",
-                                submission_client: "Cider",
+                                media_player: "Apple Music",
+                                submission_client: "Apple Music",
                                 music_service: "music.apple.com",
                                 duration_ms: currentOldData.attributes.durationInMillis,
+                                origin_url: currentOldData.attributes.url,
                             },
                             artist_name: currentOldData.attributes.artistName,
                             track_name: currentOldData.attributes.name,
@@ -115,10 +116,11 @@ export default {
                   {
                     track_metadata: {
                       additional_info: {
-                        media_player: "Cider",
-                        submission_client: "Cider",
+                        media_player: "Apple Music",
+                        submission_client: "Apple Music",
                         music_service: "music.apple.com",
                         duration_ms: currentItem.attributes.durationInMillis,
+                        origin_url: currentItem.attributes.url,
                       },
                       artist_name: currentItem.attributes.artistName,
                       track_name: currentItem.attributes.name,
@@ -145,10 +147,11 @@ export default {
                         listened_at: currentOldData.listenedAt,
                         track_metadata: {
                             additional_info: {
-                                media_player: "Cider",
-                                submission_client: "Cider",
+                                media_player: "Apple Music",
+                                submission_client: "Apple Music",
                                 music_service: "music.apple.com",
                                 duration_ms: currentOldData.attributes.durationInMillis,
+                                origin_url: currentOldData.attributes.url,
                             },
                             artist_name: currentOldData.attributes.artistName,
                             track_name: currentOldData.attributes.name,
