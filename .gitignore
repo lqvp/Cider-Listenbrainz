@@ -12,6 +12,7 @@ dist
 dist-ssr
 publish
 *.local
+pnpm-lock.yaml
 
 # Editor directories and files
 .vscode/*
