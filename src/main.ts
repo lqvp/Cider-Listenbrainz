@@ -50,10 +50,33 @@ export default {
         let oldData: any = {};
 
         function constructSongUrl(item: any) {
-            const songId = item.attributes?.playParams?.catalogId || item.attributes?.playParams?.id || item.id;
-            if (/^\d+$/.test(songId)) {
-                return `https://music.apple.com/song/${songId}`;
+            const playParams = item.attributes?.playParams;
+            if (playParams) {
+                if (playParams.catalogId && /^\d+$/.test(playParams.catalogId)) {
+                    return `https://music.apple.com/jp/song/${playParams.catalogId}`;
+                }
+
+                if (playParams.id && playParams.kind === 'song') {
+                    const songId = playParams.id.split('/').pop();
+                    if (/^\d+$/.test(songId)) {
+                        return `https://music.apple.com/jp/song/${songId}`;
+                    }
+                }
             }
+
+            if (item.id && /^\d+$/.test(item.id)) {
+                return `https://music.apple.com/jp/song/${item.id}`;
+            }
+
+            if (item.attributes?.isrc) {
+                return `https://music.apple.com/search?isrc=${item.attributes.isrc}`;
+            }
+
+            if (item.attributes?.name && item.attributes?.artistName) {
+                const encodedQuery = encodeURIComponent(`${item.attributes.name} ${item.attributes.artistName}`);
+                return `https://music.apple.com/search?term=${encodedQuery}`;
+            }
+
             return null;
         }
 
