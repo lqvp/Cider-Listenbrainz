@@ -59,7 +59,7 @@ importers:
         version: 5.4.14(@types/node@20.14.15)(sass@1.77.8)
       vite-plugin-css-injected-by-js:
         specifier: ^3.5.1
-        version: 3.5.1(vite@5.4.14(@types/node@20.14.15)(sass@1.77.8))
+        version: 3.5.2(vite@5.4.14(@types/node@20.14.15)(sass@1.77.8))
       vite-tsconfig-paths:
         specifier: ^4.3.2
         version: 4.3.2(typescript@5.5.4)(vite@5.4.14(@types/node@20.14.15)(sass@1.77.8))
@@ -874,8 +874,8 @@ packages:
     resolution: {integrity: sha512-aXEH9c5qi3uYZHo0niUtxDlT9ylG/luMW/dZslSCkbtC31wCyFkmM0kyoBBh+Grhn7CL+/kvKLfN61/EdxPxMQ==}
     engines: {node: '>=14.0.0'}
 
-  vite-plugin-css-injected-by-js@3.5.1:
-    resolution: {integrity: sha512-9ioqwDuEBxW55gNoWFEDhfLTrVKXEEZgl5adhWmmqa88EQGKfTmexy4v1Rh0pAS6RhKQs2bUYQArprB32JpUZQ==}
+  vite-plugin-css-injected-by-js@3.5.2:
+    resolution: {integrity: sha512-2MpU/Y+SCZyWUB6ua3HbJCrgnF0KACAsmzOQt1UvRVJCGF6S8xdA3ZUhWcWdM9ivG4I5az8PnQmwwrkC2CAQrQ==}
     peerDependencies:
       vite: '>2.0.0-0'
 
@@ -1647,7 +1647,7 @@ snapshots:
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.6.2
 
-  vite-plugin-css-injected-by-js@3.5.1(vite@5.4.14(@types/node@20.14.15)(sass@1.77.8)):
+  vite-plugin-css-injected-by-js@3.5.2(vite@5.4.14(@types/node@20.14.15)(sass@1.77.8)):
     dependencies:
       vite: 5.4.14(@types/node@20.14.15)(sass@1.77.8)
 
