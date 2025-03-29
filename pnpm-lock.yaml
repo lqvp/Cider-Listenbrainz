@@ -68,7 +68,7 @@ importers:
         version: 2.0.29(typescript@5.5.4)
       yaml:
         specifier: ^2.4.5
-        version: 2.5.0
+        version: 2.7.1
 
 packages:
 
@@ -953,8 +953,8 @@ packages:
   webpack-virtual-modules@0.6.2:
     resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
 
-  yaml@2.5.0:
-    resolution: {integrity: sha512-2wWLbGbYDiSqqIKoPjar3MPgB94ErzCtrNE1FdqGuaO0pi2JGjmE8aW8TDZwzU7vuxcGRdL/4gPQwQ7hD5AMSw==}
+  yaml@2.7.1:
+    resolution: {integrity: sha512-10ULxpnOCQXxJvBgxsn9ptjq6uviG/htZKk9veJGhlqn3w/DxQ631zFF+nlQXLwmImeS5amR2dl2U8sg6U9jsQ==}
     engines: {node: '>= 14'}
     hasBin: true
 
@@ -1699,4 +1699,4 @@ snapshots:
 
   webpack-virtual-modules@0.6.2: {}
 
-  yaml@2.5.0: {}
+  yaml@2.7.1: {}
