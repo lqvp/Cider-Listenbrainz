@@ -1,4 +1,4 @@
-import { useCPlugin } from '../api/CPlugin';
+import config from '../plugin.config';
 import { CustomElements } from './../main';
 
 /**
@@ -7,5 +7,5 @@ import { CustomElements } from './../main';
  * @returns 
  */
 export function customElementName(name: keyof typeof CustomElements) {
-    return `${useCPlugin().ce_prefix}-${name}`
+    return `${config.ce_prefix}-${name}`
 }

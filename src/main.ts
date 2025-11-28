@@ -1,11 +1,11 @@
-import { defineCustomElement } from "./api/CustomElement/apiCustomElement.ts";
-import { PluginAPI } from "./api/PluginAPI";
+import { defineCustomElement } from "./utils/CustomElement/apiCustomElement.ts";
+import { PluginAPI, useMusicKit } from "@ciderapp/pluginkit";
 import settings from "./components/settings.vue";
 import { customElementName } from "./utils";
 import config from './plugin.config.ts'
 import { createApp, h } from 'vue'
 import { createPinia } from "pinia";
-import { useMusicKit } from "./api/MusicKit.ts";
+
 import { useConfig } from "./config.ts";
 
 /**

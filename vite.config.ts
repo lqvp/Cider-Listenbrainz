@@ -22,6 +22,7 @@ export default defineConfig({
     }),
     vue(),
     {
+      name: 'cider-plugin-yaml',
       async buildStart(options) {
         console.log('Building plugin...')
         // create a plugin.json in assets
