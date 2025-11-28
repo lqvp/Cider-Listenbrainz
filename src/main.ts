@@ -78,6 +78,62 @@ export default {
             return null;
           }
 
+        /**
+         * Build track_metadata object from a MusicKit media item
+         * Extracts all available fields and conditionally includes them in the payload
+         */
+        function buildTrackMetadata(item: any, clientName: string) {
+            const attrs = item.attributes || {};
+            
+            // Build additional_info object with all available fields
+            const additional_info: any = {
+                media_player: clientName,
+                submission_client: clientName,
+                submission_client_version: config.version,
+                music_service: "music.apple.com",
+            };
+
+            // Add duration if available
+            if (attrs.durationInMillis) {
+                additional_info.duration_ms = attrs.durationInMillis;
+            }
+
+            // Add origin URL
+            const originUrl = constructSongUrl(item);
+            if (originUrl) {
+                additional_info.origin_url = originUrl;
+            }
+
+            // Add track number as string
+            if (attrs.trackNumber) {
+                additional_info.tracknumber = String(attrs.trackNumber);
+            }
+
+            // Add ISRC
+            if (attrs.isrc) {
+                additional_info.isrc = attrs.isrc;
+            }
+
+            // Add genre tags
+            if (attrs.genreNames && Array.isArray(attrs.genreNames) && attrs.genreNames.length > 0) {
+                additional_info.tags = attrs.genreNames;
+            }
+
+            // Build track_metadata object
+            const track_metadata: any = {
+                additional_info,
+                artist_name: attrs.artistName || "Unknown Artist",
+                track_name: attrs.name || "Unknown Track",
+            };
+
+            // Add release name (album)
+            if (attrs.albumName) {
+                track_metadata.release_name = attrs.albumName;
+            }
+
+            return track_metadata;
+        }
+
         musickit.addEventListener('playbackStateDidChange', async () => {
             const cfg = useConfig();
             if (!cfg.enabled) return;
@@ -93,17 +149,7 @@ export default {
                     payload: [
                     {
                         listened_at: currentOldData.listenedAt,
-                        track_metadata: {
-                            additional_info: {
-                                media_player: clientName,
-                                submission_client: clientName,
-                                music_service: "music.apple.com",
-                                duration_ms: currentOldData.attributes.durationInMillis,
-                                origin_url: constructSongUrl(currentItem),
-                            },
-                            artist_name: currentOldData.attributes.artistName,
-                            track_name: currentOldData.attributes.name,
-                        },
+                        track_metadata: buildTrackMetadata(currentOldData, clientName),
                     },
                     ],
                 };
@@ -142,17 +188,7 @@ export default {
                 listen_type: "playing_now",
                 payload: [
                   {
-                    track_metadata: {
-                      additional_info: {
-                        media_player: clientName,
-                        submission_client: clientName,
-                        music_service: "music.apple.com",
-                        duration_ms: currentItem.attributes.durationInMillis,
-                        origin_url: constructSongUrl(currentItem),
-                      },
-                      artist_name: currentItem.attributes.artistName,
-                      track_name: currentItem.attributes.name,
-                    },
+                    track_metadata: buildTrackMetadata(currentItem, clientName),
                   },
                 ],
             };
@@ -174,17 +210,7 @@ export default {
                     payload: [
                     {
                         listened_at: currentOldData.listenedAt,
-                        track_metadata: {
-                            additional_info: {
-                                media_player: clientName,
-                                submission_client: clientName,
-                                music_service: "music.apple.com",
-                                duration_ms: currentOldData.attributes.durationInMillis,
-                                origin_url: constructSongUrl(currentItem),
-                            },
-                            artist_name: currentOldData.attributes.artistName,
-                            track_name: currentOldData.attributes.name,
-                        },
+                        track_metadata: buildTrackMetadata(currentOldData, clientName),
                     },
                     ],
                 };
