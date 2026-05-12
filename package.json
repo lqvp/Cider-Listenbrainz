@@ -30,7 +30,7 @@
     "vite": "^6.4.1",
     "vite-plugin-css-injected-by-js": "^3.5.2",
     "vite-tsconfig-paths": "^5.1.4",
-    "vue-tsc": "^2.2.12",
+    "vue-tsc": "^3.0.0",
     "yaml": "^2.8.1"
   }
 }
