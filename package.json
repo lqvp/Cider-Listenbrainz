@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@ciderapp/pluginkit": "github:ciderapp/pluginkit",
-    "@paralleldrive/cuid2": "^2.3.1",
+    "@paralleldrive/cuid2": "^3.0.0",
     "@vue/runtime-core": "^3.5.25",
     "@vue/runtime-dom": "^3.5.25",
     "@vue/shared": "^3.5.25",
