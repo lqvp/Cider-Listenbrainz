@@ -32,7 +32,7 @@ importers:
     devDependencies:
       '@types/lodash':
         specifier: ^4.17.21
-        version: 4.17.21
+        version: 4.17.25
       '@types/node':
         specifier: ^22.19.1
         version: 22.19.1
@@ -476,8 +476,8 @@ packages:
   '@types/estree@1.0.8':
     resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
-  '@types/lodash@4.17.21':
-    resolution: {integrity: sha512-FOvQ0YPD5NOfPgMzJihoT+Za5pdkDJWcbpuj1DjaKZIr/gxodQjY/uWEFlTNqW2ugXHUiL8lRQgw63dzKHZdeQ==}
+  '@types/lodash@4.17.25':
+    resolution: {integrity: sha512-+K1NIO8I+F9/wNulfVvu23QYd0Pe9/OCqRrim4NoYIf1VoEDL90Ve4ClzpyqBLc7NpGGWRvYNCKZ1BE/Jpf8dQ==}
 
   '@types/musickit@https://codeload.github.com/ciderapp/musickit-types/tar.gz/ee13e00ce4241e61de0712b1b5a103467ddef69d':
     resolution: {gitHosted: true, tarball: https://codeload.github.com/ciderapp/musickit-types/tar.gz/ee13e00ce4241e61de0712b1b5a103467ddef69d}
@@ -1190,7 +1190,7 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
-  '@types/lodash@4.17.21': {}
+  '@types/lodash@4.17.25': {}
 
   '@types/musickit@https://codeload.github.com/ciderapp/musickit-types/tar.gz/ee13e00ce4241e61de0712b1b5a103467ddef69d': {}
 
