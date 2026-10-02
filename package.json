@@ -20,7 +20,7 @@
   "devDependencies": {
     "@types/lodash": "^4.17.21",
     "@types/node": "^22.19.1",
-    "@vitejs/plugin-vue": "^5.2.4",
+    "@vitejs/plugin-vue": "^6.0.0",
     "adm-zip": "0.5.16",
     "pinia": "^3.0.4",
     "sass": "^1.94.2",
