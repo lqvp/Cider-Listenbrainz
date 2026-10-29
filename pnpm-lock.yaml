@@ -38,7 +38,7 @@ importers:
         version: 22.20.5
       '@vitejs/plugin-vue':
         specifier: ^5.2.4
-        version: 5.2.4(vite@6.4.5(@types/node@22.20.5)(sass@1.105.1)(tsx@4.23.15)(yaml@2.9.1))(vue@3.5.44(typescript@5.9.3))
+        version: 5.2.4(vite@6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1))(vue@3.5.44(typescript@5.9.3))
       adm-zip:
         specifier: 0.5.16
         version: 0.5.16
@@ -47,7 +47,7 @@ importers:
         version: 3.0.4(typescript@5.9.3)(vue@3.5.44(typescript@5.9.3))
       sass:
         specifier: ^1.94.2
-        version: 1.105.1
+        version: 1.107.0
       tsx:
         specifier: ^4.20.6
         version: 4.23.15
@@ -59,13 +59,13 @@ importers:
         version: 19.3.0
       vite:
         specifier: ^6.4.1
-        version: 6.4.5(@types/node@22.20.5)(sass@1.105.1)(tsx@4.23.15)(yaml@2.9.1)
+        version: 6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1)
       vite-plugin-css-injected-by-js:
         specifier: ^3.5.2
-        version: 3.5.2(vite@6.4.5(@types/node@22.20.5)(sass@1.105.1)(tsx@4.23.15)(yaml@2.9.1))
+        version: 3.5.2(vite@6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1))
       vite-tsconfig-paths:
         specifier: ^5.1.4
-        version: 5.1.4(typescript@5.9.3)(vite@6.4.5(@types/node@22.20.5)(sass@1.105.1)(tsx@4.23.15)(yaml@2.9.1))
+        version: 5.1.4(typescript@5.9.3)(vite@6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1))
       vue-tsc:
         specifier: ^2.2.12
         version: 2.2.12(typescript@5.9.3)
@@ -983,8 +983,8 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
-  sass@1.105.1:
-    resolution: {integrity: sha512-1CnAWPyrrnVQzXGB/DUep1vYCKCm1CIBr+YxjjiW6wk9qtzemnGP4qicH56T2F9S4Hjtv/Ne3jDz8JqfdDU4oA==}
+  sass@1.107.0:
+    resolution: {integrity: sha512-+whPilvVNoAD57xvdIPLQT0gXo4RD1lHYw+Uw8zYHlojaeaMDxK14tc0JmEsz/XMns48h3lpypisMP+3E8eHQA==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -1021,6 +1021,7 @@ packages:
   tsconfck@3.1.6:
     resolution: {integrity: sha512-ks6Vjr/jEw0P1gmOVwutM3B7fWxoWBL2KRDb1JfqGVawBmO5UsvmWOQFGHBPl5yxYz4eERr19E6L7NMv+Fej4w==}
     engines: {node: ^18 || >=20}
+    deprecated: unmaintained
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
@@ -1496,9 +1497,9 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
-  '@vitejs/plugin-vue@5.2.4(vite@6.4.5(@types/node@22.20.5)(sass@1.105.1)(tsx@4.23.15)(yaml@2.9.1))(vue@3.5.44(typescript@5.9.3))':
+  '@vitejs/plugin-vue@5.2.4(vite@6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1))(vue@3.5.44(typescript@5.9.3))':
     dependencies:
-      vite: 6.4.5(@types/node@22.20.5)(sass@1.105.1)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1)
       vue: 3.5.44(typescript@5.9.3)
 
   '@volar/language-core@2.4.15':
@@ -1887,11 +1888,11 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.53.3
       fsevents: 2.3.3
 
-  sass@1.105.1:
+  sass@1.107.0:
     dependencies:
       chokidar: 5.0.0
       immutable: 5.1.9
-      source-map-js: 1.2.1
+      source-map-js: 1.2.2
     optionalDependencies:
       '@parcel/watcher': 2.5.1
 
@@ -1975,22 +1976,22 @@ snapshots:
       picomatch: 4.0.3
       webpack-virtual-modules: 0.6.2
 
-  vite-plugin-css-injected-by-js@3.5.2(vite@6.4.5(@types/node@22.20.5)(sass@1.105.1)(tsx@4.23.15)(yaml@2.9.1)):
+  vite-plugin-css-injected-by-js@3.5.2(vite@6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1)):
     dependencies:
-      vite: 6.4.5(@types/node@22.20.5)(sass@1.105.1)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1)
 
-  vite-tsconfig-paths@5.1.4(typescript@5.9.3)(vite@6.4.5(@types/node@22.20.5)(sass@1.105.1)(tsx@4.23.15)(yaml@2.9.1)):
+  vite-tsconfig-paths@5.1.4(typescript@5.9.3)(vite@6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1)):
     dependencies:
       debug: 4.4.3
       globrex: 0.1.2
       tsconfck: 3.1.6(typescript@5.9.3)
     optionalDependencies:
-      vite: 6.4.5(@types/node@22.20.5)(sass@1.105.1)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@6.4.5(@types/node@22.20.5)(sass@1.105.1)(tsx@4.23.15)(yaml@2.9.1):
+  vite@6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -2001,7 +2002,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.20.5
       fsevents: 2.3.3
-      sass: 1.105.1
+      sass: 1.107.0
       tsx: 4.23.15
       yaml: 2.9.1
 
