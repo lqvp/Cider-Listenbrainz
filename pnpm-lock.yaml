@@ -64,8 +64,8 @@ importers:
         specifier: ^3.5.2
         version: 3.5.2(vite@6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1))
       vite-tsconfig-paths:
-        specifier: ^5.1.4
-        version: 5.1.4(typescript@5.9.3)(vite@6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1))
+        specifier: ^6.0.0
+        version: 6.1.1(typescript@5.9.3)(vite@6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1))
       vue-tsc:
         specifier: ^2.2.12
         version: 2.2.12(typescript@5.9.3)
@@ -1074,13 +1074,10 @@ packages:
     peerDependencies:
       vite: '>2.0.0-0'
 
-  vite-tsconfig-paths@5.1.4:
-    resolution: {integrity: sha512-cYj0LRuLV2c2sMqhqhGpaO3LretdtMn/BVX4cPLanIZuwwrkVl+lK84E/miEXkCHWXuq65rhNN4rXsBcOB3S4w==}
+  vite-tsconfig-paths@6.1.1:
+    resolution: {integrity: sha512-2cihq7zliibCCZ8P9cKJrQBkfgdvcFkOOc3Y02o3GWUDLgqjWsZudaoiuOwO/gzTzy17cS5F7ZPo4bsnS4DGkg==}
     peerDependencies:
       vite: '*'
-    peerDependenciesMeta:
-      vite:
-        optional: true
 
   vite@6.4.5:
     resolution: {integrity: sha512-4enwjFfi4IwtEh0w+jPzpLVOFQiPHmmzPxcHXQOyEur47o6u0jE573DmGpjA+7irXoMLYRZD5ZaFUEneS3abPg==}
@@ -1980,12 +1977,11 @@ snapshots:
     dependencies:
       vite: 6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1)
 
-  vite-tsconfig-paths@5.1.4(typescript@5.9.3)(vite@6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1)):
+  vite-tsconfig-paths@6.1.1(typescript@5.9.3)(vite@6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1)):
     dependencies:
       debug: 4.4.3
       globrex: 0.1.2
       tsconfck: 3.1.6(typescript@5.9.3)
-    optionalDependencies:
       vite: 6.4.5(@types/node@22.20.5)(sass@1.107.0)(tsx@4.23.15)(yaml@2.9.1)
     transitivePeerDependencies:
       - supports-color
